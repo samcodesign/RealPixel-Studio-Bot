@@ -70,7 +70,7 @@ async def _8ball(ctx, *, question):
                  'My sources say no',
                  'Very doubtful',
                  'My reply is no']
-    await ctx.send("Let me consider your question for a moment human...")
+    await ctx.send("huh...")
     await asyncio.sleep(3)
     await ctx.send(f'{random.choice(responses)}')
 
