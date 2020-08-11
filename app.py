@@ -54,7 +54,7 @@ async def _8ball(ctx, *, question):
                  'Without a doubt',
                  'You may rely on it',
                  'Yes definitely',
-                 'It is decidedly so'
+                 'It is decidedly so',
                  'As I see it, yes',
                  'Most likely',
                  'Yes',
