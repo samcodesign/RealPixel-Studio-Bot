@@ -31,9 +31,8 @@ async def change_status():
     # setting activity to discord.Game object, using cycle status passed in as games name
     await bot.change_presence(activity=discord.Game(next(status)))
 
+
 # Cogs part
-
-
 @bot.command()
 async def load(ctx, extension):
     bot.load_extension(f'cogs.{extension}')
@@ -53,9 +52,8 @@ for filename in os.listdir('./cogs'):
     if filename.endswith('.py'):
         bot.load_extension(f'cogs.{filename[:-3]}')
 
+
 # 8ball game
-
-
 @bot.command(aliases=['8ball'])
 async def _8ball(ctx, *, question):
     responses = ['It is certain',
@@ -82,9 +80,8 @@ async def _8ball(ctx, *, question):
     await asyncio.sleep(3)
     await ctx.send(f'{random.choice(responses)}')
 
+
 # deleting messages
-
-
 @bot.command()
 async def clear(ctx, amount: int):
     # taking context, accessing channel, on channel we are calling purge method, limit is amount
