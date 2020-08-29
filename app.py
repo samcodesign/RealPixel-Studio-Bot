@@ -1,4 +1,7 @@
-import random, asyncio, discord, os
+import random
+import asyncio
+import discord
+import os
 from itertools import cycle
 from discord.ext import commands, tasks
 
@@ -8,7 +11,8 @@ token = "NzM0ODA5NTk3Mjg1NDk4OTYw.XxYVHw.h14EbUJjCUomfiogpK21ytfNKmM"
 
 
 # status to choose from
-status = cycle(['The Game Of Life', 'Be optimist', 'Life sounds crazy', 'Developing a game...', 'Fuck Covid'])
+status = cycle(['The Game Of Life', 'Be optimist',
+                'Life sounds crazy', 'Developing a game...', 'Fuck Covid'])
 # function decorator
 
 
@@ -18,7 +22,7 @@ async def on_ready():
     await bot.change_presence(status=discord.Status.online, activity=discord.Game(next(status)))
     # starts status change
     change_status.start()
-    print(random.choice(greeting),', Bot is ready Captain.')
+    print(random.choice(greeting), ', Bot is ready Captain.')
 
 
 # Create task // Loop that updates status of bot every 10 sec
@@ -28,6 +32,8 @@ async def change_status():
     await bot.change_presence(activity=discord.Game(next(status)))
 
 # Cogs part
+
+
 @bot.command()
 async def load(ctx, extension):
     bot.load_extension(f'cogs.{extension}')
@@ -48,6 +54,8 @@ for filename in os.listdir('./cogs'):
         bot.load_extension(f'cogs.{filename[:-3]}')
 
 # 8ball game
+
+
 @bot.command(aliases=['8ball'])
 async def _8ball(ctx, *, question):
     responses = ['It is certain',
@@ -75,6 +83,8 @@ async def _8ball(ctx, *, question):
     await ctx.send(f'{random.choice(responses)}')
 
 # deleting messages
+
+
 @bot.command()
 async def clear(ctx, amount: int):
     # taking context, accessing channel, on channel we are calling purge method, limit is amount
