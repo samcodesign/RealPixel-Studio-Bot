@@ -47,7 +47,7 @@ class Utility(commands.Cog):
         embed = discord.Embed(description=f"I'm up since {self.start_time}.")
         await ctx.send(embed=embed)
 
-# TODO: THIS DAMN SHIT ISN'T WORKING YET (INFO COMMAND)
+# TODO: THIS DAMN SHIT ISN'T WORKING YET (INFO COMMAND) "Fixed but not fully as wanted"
     @commands.command()
     async def info(self, ctx):
         """`{prefix} info` - *Get Bot info*"""
