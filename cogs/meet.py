@@ -5,7 +5,7 @@ from discord.ext import commands
 class Meet(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-
+# A command to put your meeting plan
     @commands.command()
     async def meeting(self, ctx):
         embed = discord.Embed(

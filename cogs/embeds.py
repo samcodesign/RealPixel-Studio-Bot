@@ -5,7 +5,7 @@ from discord.ext import commands
 class Embeds(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-
+# embeds examples Template + Embeds welcome
     @commands.command()
     async def embed(self, ctx):
         embed = discord.Embed(
