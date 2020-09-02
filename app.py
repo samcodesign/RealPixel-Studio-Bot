@@ -16,6 +16,7 @@ status = cycle(['The Game Of Life', 'Be optimist',
 # function decorator
 
 
+
 @bot.event
 async def on_ready():
     # when bot becomes ready, status is changed to online, activity,
@@ -92,6 +93,12 @@ async def clear(ctx, amount: int):
     # taking context, accessing channel, on channel we are calling purge method, limit is amount
     await ctx.channel.purge(limit=amount+1)
 
+
+@bot.event()
+async def daddy(ctx, message):
+    if ctx.author.id == 465636226729508896:
+        if ctx.message.content == 'rps ana babak?':
+            await ctx.send("Wsh baba cv?")
 
 @bot.event
 async def on_command_error(ctx, error):
