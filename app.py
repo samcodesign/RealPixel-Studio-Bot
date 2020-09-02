@@ -97,7 +97,7 @@ async def clear(ctx, amount: int):
 
 
 @bot.event
-async def daddy(ctx, message):
+async def on_message(ctx, message):
     if ctx.author.id == 465636226729508896:
         if message.content == 'ana babak?':
             await ctx.send("Wsh baba cv?")
