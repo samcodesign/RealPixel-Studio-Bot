@@ -97,10 +97,10 @@ async def clear(ctx, amount: int):
 
 
 @bot.event
-async def daddy(ctx):
+async def daddy(ctx, message):
     if ctx.author.id == 465636226729508896:
-        if ctx.message.content == 'ana babak?':
-            await ctx.send("Wsh baba cv?")
+        if message.content == 'ana babak?':
+            await message.channel.send("Wsh baba cv?")
 
 @bot.event
 async def on_command_error(ctx, error):
