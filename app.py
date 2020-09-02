@@ -94,7 +94,7 @@ async def clear(ctx, amount: int):
     await ctx.channel.purge(limit=amount+1)
 
 
-@bot.event()
+@bot.event
 async def daddy(ctx, message):
     if ctx.author.id == 465636226729508896:
         if ctx.message.content == 'rps ana babak?':
