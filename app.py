@@ -100,7 +100,7 @@ async def clear(ctx, amount: int):
 async def on_message(ctx, message):
     if ctx.author.id == 465636226729508896:
         if message.content == 'rps  ana babak?':
-            await ctx.send("Wsh baba cv?")
+            await ctx.send(f'Wsh baba cv?')
 
 @bot.event
 async def on_command_error(ctx, error):
