@@ -78,7 +78,7 @@ async def _8ball(ctx, *, question):
                  'My reply is no']
 
     if ctx.message == 'ana babak?':
-        if ctx.author.id == "465636226729508896":
+        if ctx.author.id == 465636226729508896:
             await ctx.send("Wsh baba cv?")
 
     await ctx.send("Hum...")
