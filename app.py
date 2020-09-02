@@ -79,7 +79,7 @@ async def _8ball(ctx, *, question):
                  'My reply is no']
     responses_creator = ['Ola Papa',
                         'Hey Dad']
-
+# checking if the author is the creator and sending a daddy message
     if ctx.author.id == 465636226729508896:
         if ctx.message.content == 'rps 8ball ana babak?':
             await ctx.send(f'{random.choice(responses_creator)}')
