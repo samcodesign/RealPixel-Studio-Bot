@@ -80,10 +80,10 @@ async def _8ball(ctx, *, question):
     if ctx.author.id == 465636226729508896:
         if ctx.message == 'rps 8ball ana babak?':
             await ctx.send("Wsh baba cv?")
-
-    await ctx.send("Hum...")
-    await asyncio.sleep(3)
-    await ctx.send(f'{random.choice(responses)}')
+    else:
+        await ctx.send("Hum...")
+        await asyncio.sleep(3)
+        await ctx.send(f'{random.choice(responses)}')
 
 
 # deleting messages
