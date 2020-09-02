@@ -96,7 +96,7 @@ async def clear(ctx, amount: int):
     await ctx.channel.purge(limit=amount+1)
 
 
-@bot.event
+@bot.command(alliases= [' '])
 async def on_message(ctx, message):
     if ctx.author.id == 465636226729508896:
         if message.content == 'ana babak?':
