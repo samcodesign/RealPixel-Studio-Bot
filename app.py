@@ -77,10 +77,12 @@ async def _8ball(ctx, *, question):
                  'My sources say no',
                  'Very doubtful',
                  'My reply is no']
+    responses_creator = ['Ola Papa',
+                        'Hey Dad']
 
     if ctx.author.id == 465636226729508896:
         if ctx.message.content == 'rps 8ball ana babak?':
-            await ctx.send("Wsh baba cv?")
+            await ctx.send(f'{random.choice(responses_creator)}')
     else:
         await ctx.send("Hum...")
         await asyncio.sleep(3)
