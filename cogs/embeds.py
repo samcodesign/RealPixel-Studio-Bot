@@ -13,13 +13,11 @@ class Embeds(commands.Cog):
             description='Thank you for accepting our invitation and welcome to Real Pixel Studio',
             colour=discord.Colour.blurple()
         )
-        embed.set_footer(text='By Sam & Moh')
-        embed.set_image(url='https://cdn.discordapp.com/attachments/734563166775935016/737463765498593371/organi.jpg')
-        embed.set_author(name='RPS Bot', icon_url='https://cdn.discordapp.com/attachments/734563166775935016/737464407629627492/Artboard_18.png')
-        embed.add_field(name='What Now?', value='we will have a long journey on making this gamedev startup \
-                                                dream come true please choose the field that you are mostly capable \
-                                                of helping in', inline=False)
-        embed.add_field(name='Choose your CARACTERE', value='COM, PROG, ART, DESIGN (Wanted to sound like an RPG but...)', inline=True)
+        embed.set_footer(text='samcodesign')
+        embed.set_image(url='')
+        embed.set_author(name='RPS Bot', icon_url='')
+        embed.add_field(name='What Now?', value='', inline=False)
+        embed.add_field(name='Choose your CARACTERE', value='', inline=True)
         await ctx.send(embed=embed)
 
 
