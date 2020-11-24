@@ -7,7 +7,7 @@ from discord.ext import commands, tasks
 
 greeting = ['Hey', 'Ola', 'Hi', 'Marhaba', 'Huh']
 bot = commands.Bot(command_prefix=['RPS ', 'rps '])
-token = "NzM0ODA5NTk3Mjg1NDk4OTYw.XxYVHw.h14EbUJjCUomfiogpK21ytfNKmM"
+token = "YOUR_TOKEN_HERE"
 
 
 # status to choose from
